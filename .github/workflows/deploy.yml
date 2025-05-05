@@ -6,16 +6,17 @@ on:
       - master
 
 jobs:
-  ftp-deploy:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
 
       - name: FTP Deploy to Subdomain
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.0
         with:
-          server: action.nazibmahfuz.com
-          username: nazib_action@action.nazibmahfuz.com
-          password: nazIB20@
+          server: ${{ vars.FTP_SERVER }}
+          username: ${{ vars.FTP_USERNAME }}
+          password: ${{ vars.FTP_PASSWORD }}
           server-dir: /public_html/action/
