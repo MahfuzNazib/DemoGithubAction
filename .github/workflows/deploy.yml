@@ -16,7 +16,7 @@ jobs:
       - name: FTP Deploy to Subdomain
         uses: SamKirkland/FTP-Deploy-Action@v4.3.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          server: ${{ secrets.SERVER }}
           ftp-username: ${{ secrets.FTP_USERNAME }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /public_html/action/
