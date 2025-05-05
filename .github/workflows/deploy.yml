@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: FTP Deploy to Subdomain
-        uses: SamKirkland/FTP-Deploy-Action@v4
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: action.nazibmahfuz.com
           username: nazib_action@action.nazibmahfuz.com
