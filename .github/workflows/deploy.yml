@@ -19,4 +19,4 @@ jobs:
           server: ${{ vars.FTP_SERVER }}
           username: ${{ vars.FTP_USERNAME }}
           password: ${{ vars.FTP_PASSWORD }}
-          server-dir: /public_html/action/
+          server-dir: /nazib_action/public_html/action/
